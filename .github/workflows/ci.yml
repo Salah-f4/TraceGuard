@@ -1,0 +1,96 @@
+name: Offline validation
+on:
+  pull_request:
+  push:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: validation-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  validate:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-latest
+            lock: windows
+            wheel-python: build/wheel-env/Scripts/python.exe
+          - os: ubuntu-latest
+            lock: linux
+            wheel-python: build/wheel-env/bin/python
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
+    defaults:
+      run:
+        shell: pwsh
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: requirements/${{ matrix.lock }}-py312-*.txt
+      - name: Install locked dependencies and local source
+        run: |
+          python -m pip install --require-hashes -r requirements/${{ matrix.lock }}-py312-tooling.txt -r requirements/${{ matrix.lock }}-py312-dev.txt
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          python -m pip install --no-deps --no-build-isolation -e .
+          exit $LASTEXITCODE
+      - name: Lint, strict types and mocked tests
+        run: |
+          python -m ruff format --check src tests tools
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          python -m ruff check src tests tools
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          python -m mypy
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          python -m pytest --cov-report=xml:coverage.xml --junitxml=junit.xml
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          python -m pip check
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          python -m compileall -q src tests tools
+          exit $LASTEXITCODE
+      - name: Build, inspect and test installed wheel
+        run: |
+          python -m build --no-isolation
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          python -m twine check dist/*
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          python tools/inspect_archives.py
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          python -m pip download --require-hashes --only-binary=:all: -r requirements/${{ matrix.lock }}-py312-runtime.txt -d build/wheels
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          python -m venv build/wheel-env
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          & '${{ matrix.wheel-python }}' -m pip install --no-index --find-links build/wheels --require-hashes -r requirements/${{ matrix.lock }}-py312-runtime.txt
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          $wheel = (Get-ChildItem dist/*.whl).FullName
+          & '${{ matrix.wheel-python }}' -m pip install --no-deps $wheel
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          & '${{ matrix.wheel-python }}' -I tools/wheel_smoke.py
+          exit $LASTEXITCODE
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: synthetic-validation-${{ matrix.lock }}
+          path: |
+            coverage.xml
+            junit.xml
+            dist/*.contents.txt
+          retention-days: 7
+  secrets:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+      - run: python tools/download_scanner.py
+      - run: python tools/release_manifest.py build/release-candidate
+      - run: python tools/secret_scan.py build/scanner/gitleaks build/release-candidate

@@ -1,0 +1,28 @@
+{
+  "notice": "Entirely synthetic; usage and provider evidence are fabricated.",
+  "schema_version": "1.3",
+  "risk_score": 65,
+  "label": "suspicious",
+  "ai_reporting": {
+    "status": "completed",
+    "accepted_claims": 7,
+    "example_claim": {
+      "claim_id": "d05dcbb84af0dbac6cd3d720eec6554a3b636eef6f0516da168e3672f959d734",
+      "kind": "fact",
+      "text": "Recorded risk 65/100, label suspicious, evidence confidence 70/100. Zero/unknown never establishes safety.",
+      "ioc_ids": [
+        "4d0d8c35de4e85998f1907913b76c32d0876912d73b3f34145fcfe0f320922b3"
+      ],
+      "evidence_ids": [
+        "5e74f56ddfca187e66c253fdf4b556b2c83aed4aab2624359530673d59e389ba"
+      ],
+      "relation_refs": [],
+      "template_key": "assessment_snapshot",
+      "action_priority": null,
+      "local_pointers": [
+        "/assessments/0"
+      ],
+      "origin": "ai_assisted"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+# Python and tooling
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+.venv/
+.venv312/
+venv/
+build/
+dist/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Local investigation data and SQLite files
+live-smoke-report.json
+live-ai-smoke-report.json
+data/
+reports/
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Release validation output (synthetic only)
+.validation/
+pytest-cache-files-*/
+coverage.xml
+junit.xml

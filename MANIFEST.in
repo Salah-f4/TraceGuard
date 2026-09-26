@@ -1,0 +1,15 @@
+include LICENSE README.md pyproject.toml .env.example .gitignore
+include SECURITY.md CONTRIBUTING.md MANIFEST.in
+recursive-include src/traceguard *.py
+recursive-include tests *.py *.log *.md
+recursive-include docs *.md *.svg *.txt *.json
+recursive-include requirements *.in *.txt *.md
+recursive-include tools *.py
+prune .git
+prune .venv
+prune .venv312
+prune build
+prune dist
+prune reports
+prune .validation
+global-exclude __pycache__ *.py[cod] .env live-*-report.json

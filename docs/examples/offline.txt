@@ -1,0 +1,213 @@
+SYNTHETIC / MOCKED EXAMPLE - no service calls
+TraceGuard: 2 unique IOCs from 2 occurrences
+Provisional heuristics, not probabilities. Zero/unknown never means safe.
+                                               IOC 1                                                
+┌─────────────────────────────┬────────────────────────────────────────────────────────────────────┐
+│ Type                        │ ipv4                                                               │
+│ Original                    │ 192.0.2.1                                                          │
+│ Normalized                  │ 192.0.2.1                                                          │
+│ Defanged                    │ False                                                              │
+│ Valid                       │ True                                                               │
+│ Validation                  │ Valid syntax; no threat assessment performed.                      │
+│ Risk                        │ 0/100 (unknown)                                                    │
+│ Evidence confidence         │ 0/100                                                              │
+│ Assessment                  │ No provider evidence; safety unknown.                              │
+│ Occurrence                  │ <text>:1:1 [0:9] defanged=False 192.0.2.1                          │
+└─────────────────────────────┴────────────────────────────────────────────────────────────────────┘
+                                               IOC 2                                                
+┌────────────────────────┬─────────────────────────────────────────────────────────────────────────┐
+│ Type                   │ url                                                                     │
+│ Original               │ hxxps[:]//example[.]com/Demo                                            │
+│ Normalized             │ https://example.com/Demo                                                │
+│ Defanged               │ True                                                                    │
+│ Valid                  │ True                                                                    │
+│ Validation             │ Valid syntax; no threat assessment performed.                           │
+│ Risk                   │ 0/100 (unknown)                                                         │
+│ Evidence confidence    │ 0/100                                                                   │
+│ Assessment             │ No provider evidence; safety unknown.                                   │
+│ Occurrence             │ <text>:1:11 [10:38] defanged=True hxxps[:]//example[.]com/Demo          │
+└────────────────────────┴─────────────────────────────────────────────────────────────────────────┘
+Complete assessment and relationship breakdown (schema 1.2):
+{
+  "schema_version": "1.2",
+  "source": "<text>",
+  "input_bytes": 38,
+  "extracted_count": 2,
+  "unique_count": 2,
+  "results": [
+    {
+      "type": "ipv4",
+      "original_value": "192.0.2.1",
+      "normalized_value": "192.0.2.1",
+      "is_defanged": false,
+      "is_valid": true,
+      "validation_message": "Valid syntax; no threat assessment performed.",
+      "source_location": {
+        "source": "<text>",
+        "start_offset": 0,
+        "end_offset": 9,
+        "line": 1,
+        "column": 1
+      },
+      "occurrences": [
+        {
+          "original_value": "192.0.2.1",
+          "is_defanged": false,
+          "source_location": {
+            "source": "<text>",
+            "start_offset": 0,
+            "end_offset": 9,
+            "line": 1,
+            "column": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": "url",
+      "original_value": "hxxps[:]//example[.]com/Demo",
+      "normalized_value": "https://example.com/Demo",
+      "is_defanged": true,
+      "is_valid": true,
+      "validation_message": "Valid syntax; no threat assessment performed.",
+      "source_location": {
+        "source": "<text>",
+        "start_offset": 10,
+        "end_offset": 38,
+        "line": 1,
+        "column": 11
+      },
+      "occurrences": [
+        {
+          "original_value": "hxxps[:]//example[.]com/Demo",
+          "is_defanged": true,
+          "source_location": {
+            "source": "<text>",
+            "start_offset": 10,
+            "end_offset": 38,
+            "line": 1,
+            "column": 11
+          }
+        }
+      ]
+    }
+  ],
+  "assessments": [
+    {
+      "ioc_index": 0,
+      "ioc_id": "f30a52d92e9e659853691d3a0f4f19eee01b1ebbf2428af9c98b73efdea6dafd",
+      "policy_version": "phase4-v1",
+      "scoring_as_of": "2026-09-26T00:00:00Z",
+      "risk_score": 0,
+      "evidence_confidence": 0,
+      "label": "unknown",
+      "reason": "No provider evidence; safety unknown.",
+      "contributions": [],
+      "maximum_score": 0,
+      "maximum_support": 0,
+      "qualified_provider_count": 0,
+      "corroboration_evidence_ids": [],
+      "risk_bonus": 0,
+      "confidence_bonus": 0,
+      "tension_penalty": 0,
+      "risk_before_cap": 0,
+      "confidence_before_cap": 0,
+      "risk_cap": 100,
+      "confidence_cap": 95,
+      "tensions": [],
+      "coverage": {},
+      "limitations": [
+        "Provisional heuristics, not probabilities or proof of compromise.",
+        "Zero, not_found, harmless votes, and no adverse evidence never establish safety.",
+        "Distinct providers are only a proxy for independent upstream sources.",
+        "URLhaus timestamp provenance is ambiguous; freshness is capped at 75%.",
+        "Relationships are descriptive only and never transfer risk."
+      ]
+    },
+    {
+      "ioc_index": 1,
+      "ioc_id": "8f8fd11e25e23fbbe7db2cfa520ef22045b738e169a8497f624b2a0662ed8705",
+      "policy_version": "phase4-v1",
+      "scoring_as_of": "2026-09-26T00:00:00Z",
+      "risk_score": 0,
+      "evidence_confidence": 0,
+      "label": "unknown",
+      "reason": "No provider evidence; safety unknown.",
+      "contributions": [],
+      "maximum_score": 0,
+      "maximum_support": 0,
+      "qualified_provider_count": 0,
+      "corroboration_evidence_ids": [],
+      "risk_bonus": 0,
+      "confidence_bonus": 0,
+      "tension_penalty": 0,
+      "risk_before_cap": 0,
+      "confidence_before_cap": 0,
+      "risk_cap": 100,
+      "confidence_cap": 95,
+      "tensions": [],
+      "coverage": {},
+      "limitations": [
+        "Provisional heuristics, not probabilities or proof of compromise.",
+        "Zero, not_found, harmless votes, and no adverse evidence never establish safety.",
+        "Distinct providers are only a proxy for independent upstream sources.",
+        "URLhaus timestamp provenance is ambiguous; freshness is capped at 75%.",
+        "Relationships are descriptive only and never transfer risk."
+      ]
+    }
+  ],
+  "relationships": {
+    "edges": [],
+    "groups": [
+      {
+        "kind": "same_input",
+        "group_id": "f3273bd145113ebadfc99933f8ce052e8189aa6107e795815a2216a5837b5b55",
+        "members": [
+          "8f8fd11e25e23fbbe7db2cfa520ef22045b738e169a8497f624b2a0662ed8705",
+          "f30a52d92e9e659853691d3a0f4f19eee01b1ebbf2428af9c98b73efdea6dafd"
+        ],
+        "occurrences": [],
+        "lookup": null,
+        "reused_evidence_ids": [],
+        "risk_contribution": 0,
+        "confidence_contribution": 0
+      },
+      {
+        "kind": "same_source_line",
+        "group_id": "08b11f12cd842b561aec428d5a60af32c5d82e27345805161c61d3eafd660803",
+        "members": [
+          "8f8fd11e25e23fbbe7db2cfa520ef22045b738e169a8497f624b2a0662ed8705",
+          "f30a52d92e9e659853691d3a0f4f19eee01b1ebbf2428af9c98b73efdea6dafd"
+        ],
+        "occurrences": [
+          {
+            "occurrence_id": "cdde6b5d94366e2fde06c804f46f27c68285975070ed2a01b7ea0b79ed12998e",
+            "ioc_id": "8f8fd11e25e23fbbe7db2cfa520ef22045b738e169a8497f624b2a0662ed8705",
+            "source": "<text>",
+            "line": 1,
+            "column": 11,
+            "start_offset": 10,
+            "end_offset": 38,
+            "pointer": "/results/1/occurrences/0/source_location"
+          },
+          {
+            "occurrence_id": "7734e40d6905311f174cb1747bd13df20910c5f839765c9cac78c24b229fe8f2",
+            "ioc_id": "f30a52d92e9e659853691d3a0f4f19eee01b1ebbf2428af9c98b73efdea6dafd",
+            "source": "<text>",
+            "line": 1,
+            "column": 1,
+            "start_offset": 0,
+            "end_offset": 9,
+            "pointer": "/results/0/occurrences/0/source_location"
+          }
+        ],
+        "lookup": null,
+        "reused_evidence_ids": [],
+        "risk_contribution": 0,
+        "confidence_contribution": 0
+      }
+    ],
+    "explanation": "Descriptive only: no causation, resolution, or transfer of risk."
+  },
+  "scoring_diagnostics": []
+}

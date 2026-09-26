@@ -1,0 +1,155 @@
+<svg class="rich-terminal" viewBox="0 0 994 660.0" xmlns="http://www.w3.org/2000/svg">
+    <!-- Generated with Rich https://www.textualize.io -->
+    <style>
+
+    @font-face {
+        font-family: "Fira Code";
+        src: local("FiraCode-Regular"),
+                url("https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff2/FiraCode-Regular.woff2") format("woff2"),
+                url("https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff/FiraCode-Regular.woff") format("woff");
+        font-style: normal;
+        font-weight: 400;
+    }
+    @font-face {
+        font-family: "Fira Code";
+        src: local("FiraCode-Bold"),
+                url("https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff2/FiraCode-Bold.woff2") format("woff2"),
+                url("https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff/FiraCode-Bold.woff") format("woff");
+        font-style: bold;
+        font-weight: 700;
+    }
+
+    .mocked-ai-matrix {
+        font-family: Fira Code, monospace;
+        font-size: 20px;
+        line-height: 24.4px;
+        font-variant-east-asian: full-width;
+    }
+
+    .mocked-ai-title {
+        font-size: 18px;
+        font-weight: bold;
+        font-family: arial;
+    }
+
+    .mocked-ai-r1 { fill: #68a0b3;font-weight: bold }
+.mocked-ai-r2 { fill: #c5c8c6 }
+    </style>
+
+    <defs>
+    <clipPath id="mocked-ai-clip-terminal">
+      <rect x="0" y="0" width="975.0" height="609.0" />
+    </clipPath>
+    <clipPath id="mocked-ai-line-0">
+    <rect x="0" y="1.5" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="mocked-ai-line-1">
+    <rect x="0" y="25.9" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="mocked-ai-line-2">
+    <rect x="0" y="50.3" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="mocked-ai-line-3">
+    <rect x="0" y="74.7" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="mocked-ai-line-4">
+    <rect x="0" y="99.1" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="mocked-ai-line-5">
+    <rect x="0" y="123.5" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="mocked-ai-line-6">
+    <rect x="0" y="147.9" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="mocked-ai-line-7">
+    <rect x="0" y="172.3" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="mocked-ai-line-8">
+    <rect x="0" y="196.7" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="mocked-ai-line-9">
+    <rect x="0" y="221.1" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="mocked-ai-line-10">
+    <rect x="0" y="245.5" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="mocked-ai-line-11">
+    <rect x="0" y="269.9" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="mocked-ai-line-12">
+    <rect x="0" y="294.3" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="mocked-ai-line-13">
+    <rect x="0" y="318.7" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="mocked-ai-line-14">
+    <rect x="0" y="343.1" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="mocked-ai-line-15">
+    <rect x="0" y="367.5" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="mocked-ai-line-16">
+    <rect x="0" y="391.9" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="mocked-ai-line-17">
+    <rect x="0" y="416.3" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="mocked-ai-line-18">
+    <rect x="0" y="440.7" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="mocked-ai-line-19">
+    <rect x="0" y="465.1" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="mocked-ai-line-20">
+    <rect x="0" y="489.5" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="mocked-ai-line-21">
+    <rect x="0" y="513.9" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="mocked-ai-line-22">
+    <rect x="0" y="538.3" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="mocked-ai-line-23">
+    <rect x="0" y="562.7" width="976" height="24.65"/>
+            </clipPath>
+    </defs>
+
+    <rect fill="#292929" stroke="rgba(255,255,255,0.35)" stroke-width="1" x="1" y="1" width="992" height="658" rx="8"/><text class="mocked-ai-title" fill="#c5c8c6" text-anchor="middle" x="496" y="27">TraceGuard&#160;synthetic&#160;example</text>
+            <g transform="translate(26,22)">
+            <circle cx="0" cy="0" r="7" fill="#ff5f57"/>
+            <circle cx="22" cy="0" r="7" fill="#febc2e"/>
+            <circle cx="44" cy="0" r="7" fill="#28c840"/>
+            </g>
+        
+    <g transform="translate(9, 41)" clip-path="url(#mocked-ai-clip-terminal)">
+    
+    <g class="mocked-ai-matrix">
+    <text class="mocked-ai-r1" x="0" y="20" textLength="549" clip-path="url(#mocked-ai-line-0)">SYNTHETIC&#160;/&#160;MOCKED&#160;EXAMPLE&#160;-&#160;no&#160;service&#160;calls</text><text class="mocked-ai-r2" x="976" y="20" textLength="12.2" clip-path="url(#mocked-ai-line-0)">
+</text><text class="mocked-ai-r2" x="0" y="44.4" textLength="780.8" clip-path="url(#mocked-ai-line-1)">Terminal&#160;excerpt;&#160;complete&#160;accessible&#160;text&#160;is&#160;in&#160;docs/examples/.</text><text class="mocked-ai-r2" x="976" y="44.4" textLength="12.2" clip-path="url(#mocked-ai-line-1)">
+</text><text class="mocked-ai-r2" x="0" y="68.8" textLength="536.8" clip-path="url(#mocked-ai-line-2)">TraceGuard:&#160;1&#160;unique&#160;IOCs&#160;from&#160;1&#160;occurrences</text><text class="mocked-ai-r2" x="976" y="68.8" textLength="12.2" clip-path="url(#mocked-ai-line-2)">
+</text><text class="mocked-ai-r2" x="0" y="93.2" textLength="890.6" clip-path="url(#mocked-ai-line-3)">Provisional&#160;heuristics,&#160;not&#160;probabilities.&#160;Zero/unknown&#160;never&#160;means&#160;safe.</text><text class="mocked-ai-r2" x="976" y="93.2" textLength="12.2" clip-path="url(#mocked-ai-line-3)">
+</text><text class="mocked-ai-r2" x="0" y="117.6" textLength="597.8" clip-path="url(#mocked-ai-line-4)">[...&#160;synthetic&#160;evidence&#160;omitted&#160;from&#160;capture&#160;...]</text><text class="mocked-ai-r2" x="976" y="117.6" textLength="12.2" clip-path="url(#mocked-ai-line-4)">
+</text><text class="mocked-ai-r2" x="0" y="142" textLength="451.4" clip-path="url(#mocked-ai-line-5)">AI&#160;reporting:&#160;completed&#160;(ai_assisted)</text><text class="mocked-ai-r2" x="976" y="142" textLength="12.2" clip-path="url(#mocked-ai-line-5)">
+</text><text class="mocked-ai-r2" x="0" y="166.4" textLength="207.4" clip-path="url(#mocked-ai-line-6)">Executive&#160;Summary</text><text class="mocked-ai-r2" x="976" y="166.4" textLength="12.2" clip-path="url(#mocked-ai-line-6)">
+</text><text class="mocked-ai-r2" x="0" y="190.8" textLength="976" clip-path="url(#mocked-ai-line-7)">[fact;&#160;ai_assisted]&#160;Recorded&#160;risk&#160;65/100,&#160;label&#160;suspicious,&#160;evidence&#160;confidence&#160;</text><text class="mocked-ai-r2" x="976" y="190.8" textLength="12.2" clip-path="url(#mocked-ai-line-7)">
+</text><text class="mocked-ai-r2" x="0" y="215.2" textLength="244" clip-path="url(#mocked-ai-line-8)">70/100.&#160;Zero/unknown</text><text class="mocked-ai-r2" x="976" y="215.2" textLength="12.2" clip-path="url(#mocked-ai-line-8)">
+</text><text class="mocked-ai-r2" x="0" y="239.6" textLength="305" clip-path="url(#mocked-ai-line-9)">never&#160;establishes&#160;safety.</text><text class="mocked-ai-r2" x="976" y="239.6" textLength="12.2" clip-path="url(#mocked-ai-line-9)">
+</text><text class="mocked-ai-r2" x="0" y="264" textLength="915" clip-path="url(#mocked-ai-line-10)">IOC&#160;IDs:&#160;4d0d8c35de4e85998f1907913b76c32d0876912d73b3f34145fcfe0f320922b3;&#160;</text><text class="mocked-ai-r2" x="976" y="264" textLength="12.2" clip-path="url(#mocked-ai-line-10)">
+</text><text class="mocked-ai-r2" x="0" y="288.4" textLength="951.6" clip-path="url(#mocked-ai-line-11)">evidence&#160;IDs:&#160;5e74f56ddfca187e66c253fdf4b556b2c83aed4aab2624359530673d59e389ba</text><text class="mocked-ai-r2" x="976" y="288.4" textLength="12.2" clip-path="url(#mocked-ai-line-11)">
+</text><text class="mocked-ai-r2" x="0" y="312.8" textLength="976" clip-path="url(#mocked-ai-line-12)">[fact;&#160;ai_assisted]&#160;virustotal&#160;evidence&#160;contributes&#160;65&#160;freshness-adjusted&#160;points</text><text class="mocked-ai-r2" x="976" y="312.8" textLength="12.2" clip-path="url(#mocked-ai-line-12)">
+</text><text class="mocked-ai-r2" x="0" y="337.2" textLength="231.8" clip-path="url(#mocked-ai-line-13)">(base&#160;65);&#160;provider</text><text class="mocked-ai-r2" x="976" y="337.2" textLength="12.2" clip-path="url(#mocked-ai-line-13)">
+</text><text class="mocked-ai-r2" x="0" y="361.6" textLength="451.4" clip-path="url(#mocked-ai-line-14)">reputation&#160;does&#160;not&#160;prove&#160;compromise.</text><text class="mocked-ai-r2" x="976" y="361.6" textLength="12.2" clip-path="url(#mocked-ai-line-14)">
+</text><text class="mocked-ai-r2" x="0" y="386" textLength="915" clip-path="url(#mocked-ai-line-15)">IOC&#160;IDs:&#160;4d0d8c35de4e85998f1907913b76c32d0876912d73b3f34145fcfe0f320922b3;&#160;</text><text class="mocked-ai-r2" x="976" y="386" textLength="12.2" clip-path="url(#mocked-ai-line-15)">
+</text><text class="mocked-ai-r2" x="0" y="410.4" textLength="951.6" clip-path="url(#mocked-ai-line-16)">evidence&#160;IDs:&#160;5e74f56ddfca187e66c253fdf4b556b2c83aed4aab2624359530673d59e389ba</text><text class="mocked-ai-r2" x="976" y="410.4" textLength="12.2" clip-path="url(#mocked-ai-line-16)">
+</text><text class="mocked-ai-r2" x="0" y="434.8" textLength="146.4" clip-path="url(#mocked-ai-line-17)">Ioc&#160;Findings</text><text class="mocked-ai-r2" x="976" y="434.8" textLength="12.2" clip-path="url(#mocked-ai-line-17)">
+</text><text class="mocked-ai-r2" x="0" y="459.2" textLength="976" clip-path="url(#mocked-ai-line-18)">[fact;&#160;ai_assisted]&#160;Recorded&#160;risk&#160;65/100,&#160;label&#160;suspicious,&#160;evidence&#160;confidence&#160;</text><text class="mocked-ai-r2" x="976" y="459.2" textLength="12.2" clip-path="url(#mocked-ai-line-18)">
+</text><text class="mocked-ai-r2" x="0" y="483.6" textLength="244" clip-path="url(#mocked-ai-line-19)">70/100.&#160;Zero/unknown</text><text class="mocked-ai-r2" x="976" y="483.6" textLength="12.2" clip-path="url(#mocked-ai-line-19)">
+</text><text class="mocked-ai-r2" x="0" y="508" textLength="305" clip-path="url(#mocked-ai-line-20)">never&#160;establishes&#160;safety.</text><text class="mocked-ai-r2" x="976" y="508" textLength="12.2" clip-path="url(#mocked-ai-line-20)">
+</text><text class="mocked-ai-r2" x="0" y="532.4" textLength="915" clip-path="url(#mocked-ai-line-21)">IOC&#160;IDs:&#160;4d0d8c35de4e85998f1907913b76c32d0876912d73b3f34145fcfe0f320922b3;&#160;</text><text class="mocked-ai-r2" x="976" y="532.4" textLength="12.2" clip-path="url(#mocked-ai-line-21)">
+</text><text class="mocked-ai-r2" x="0" y="556.8" textLength="951.6" clip-path="url(#mocked-ai-line-22)">evidence&#160;IDs:&#160;5e74f56ddfca187e66c253fdf4b556b2c83aed4aab2624359530673d59e389ba</text><text class="mocked-ai-r2" x="976" y="556.8" textLength="12.2" clip-path="url(#mocked-ai-line-22)">
+</text><text class="mocked-ai-r2" x="0" y="581.2" textLength="976" clip-path="url(#mocked-ai-line-23)">[fact;&#160;ai_assisted]&#160;virustotal&#160;evidence&#160;contributes&#160;65&#160;freshness-adjusted&#160;points</text><text class="mocked-ai-r2" x="976" y="581.2" textLength="12.2" clip-path="url(#mocked-ai-line-23)">
+</text><text class="mocked-ai-r2" x="0" y="605.6" textLength="231.8" clip-path="url(#mocked-ai-line-24)">(base&#160;65);&#160;provider</text><text class="mocked-ai-r2" x="976" y="605.6" textLength="12.2" clip-path="url(#mocked-ai-line-24)">
+</text>
+    </g>
+    </g>
+</svg>

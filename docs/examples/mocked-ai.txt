@@ -1,0 +1,553 @@
+SYNTHETIC / MOCKED EXAMPLE - no service calls
+TraceGuard: 1 unique IOCs from 1 occurrences
+Provisional heuristics, not probabilities. Zero/unknown never means safe.
+                                               IOC 1                                                
+┌────────────────────┬─────────────────────────────────────────────────────────────────────────────┐
+│ Type               │ sha256                                                                      │
+│ Original           │ b2c45c1a1e1c6c9309a5484a9a7a7ff1fb41b58dda02c25d9bab80882264fdb9            │
+│ Normalized         │ b2c45c1a1e1c6c9309a5484a9a7a7ff1fb41b58dda02c25d9bab80882264fdb9            │
+│ Defanged           │ False                                                                       │
+│ Valid              │ True                                                                        │
+│ Validation         │ Valid syntax; no threat assessment performed.                               │
+│ Risk               │ 65/100 (suspicious)                                                         │
+│ Evidence           │ 70/100                                                                      │
+│ confidence         │                                                                             │
+│ Assessment         │ Provisional adverse reputation assessment; not proof of compromise.         │
+│ Occurrence         │ <text>:1:1 [0:64] defanged=False                                            │
+│                    │ b2c45c1a1e1c6c9309a5484a9a7a7ff1fb41b58dda02c25d9bab80882264fdb9            │
+└────────────────────┴─────────────────────────────────────────────────────────────────────────────┘
+Enrichment: complete
+IOC 0: virustotal: found — Synthetic documentation response; no lookup performed.
+{
+  "attributes": {
+    "report_id": "b2c45c1a1e1c6c9309a5484a9a7a7ff1fb41b58dda02c25d9bab80882264fdb9",
+    "last_analysis_stats": {
+      "malicious": 6,
+      "suspicious": 0,
+      "harmless": 0
+    }
+  },
+  "observed_at": "2026-09-26T00:00:00Z",
+  "observed_at_original": null,
+  "reference": null
+}
+AI reporting: completed (ai_assisted)
+Executive Summary
+[fact; ai_assisted] Recorded risk 65/100, label suspicious, evidence confidence 70/100. Zero/unknown
+never establishes safety.
+IOC IDs: 4d0d8c35de4e85998f1907913b76c32d0876912d73b3f34145fcfe0f320922b3; evidence IDs: 5e74f56ddfca187e66c253fdf4b556b2c83aed4aab2624359530673d59e389ba
+[fact; ai_assisted] virustotal evidence contributes 65 freshness-adjusted points (base 65); provider
+reputation does not prove compromise.
+IOC IDs: 4d0d8c35de4e85998f1907913b76c32d0876912d73b3f34145fcfe0f320922b3; evidence IDs: 5e74f56ddfca187e66c253fdf4b556b2c83aed4aab2624359530673d59e389ba
+Ioc Findings
+[fact; ai_assisted] Recorded risk 65/100, label suspicious, evidence confidence 70/100. Zero/unknown
+never establishes safety.
+IOC IDs: 4d0d8c35de4e85998f1907913b76c32d0876912d73b3f34145fcfe0f320922b3; evidence IDs: 5e74f56ddfca187e66c253fdf4b556b2c83aed4aab2624359530673d59e389ba
+[fact; ai_assisted] virustotal evidence contributes 65 freshness-adjusted points (base 65); provider
+reputation does not prove compromise.
+IOC IDs: 4d0d8c35de4e85998f1907913b76c32d0876912d73b3f34145fcfe0f320922b3; evidence IDs: 5e74f56ddfca187e66c253fdf4b556b2c83aed4aab2624359530673d59e389ba
+Correlations
+No applicable claims in this section.
+Uncertainties
+[uncertainty; ai_assisted] Reputation evidence does not prove compromise in this environment.
+IOC IDs: 4d0d8c35de4e85998f1907913b76c32d0876912d73b3f34145fcfe0f320922b3; evidence IDs: 5e74f56ddfca187e66c253fdf4b556b2c83aed4aab2624359530673d59e389ba
+Prioritized Investigation Steps
+[recommended_step; ai_assisted] Manually review existing internal telemetry if available. Document 
+context locally. No action was performed; do not close an investigation solely on a zero score.
+IOC IDs: 4d0d8c35de4e85998f1907913b76c32d0876912d73b3f34145fcfe0f320922b3; evidence IDs: 5e74f56ddfca187e66c253fdf4b556b2c83aed4aab2624359530673d59e389ba
+Analyst Notes
+[interpretation; ai_assisted] Scores and confidence are provisional heuristics, not probabilities. 
+Use the preserved deterministic evidence before drawing incident conclusions.
+IOC IDs: 4d0d8c35de4e85998f1907913b76c32d0876912d73b3f34145fcfe0f320922b3; evidence IDs: 5e74f56ddfca187e66c253fdf4b556b2c83aed4aab2624359530673d59e389ba
+Complete assessment and relationship breakdown (schema 1.3):
+{
+  "schema_version": "1.3",
+  "source": "<text>",
+  "input_bytes": 64,
+  "extracted_count": 1,
+  "unique_count": 1,
+  "results": [
+    {
+      "type": "sha256",
+      "original_value": "b2c45c1a1e1c6c9309a5484a9a7a7ff1fb41b58dda02c25d9bab80882264fdb9",
+      "normalized_value": "b2c45c1a1e1c6c9309a5484a9a7a7ff1fb41b58dda02c25d9bab80882264fdb9",
+      "is_defanged": false,
+      "is_valid": true,
+      "validation_message": "Valid syntax; no threat assessment performed.",
+      "source_location": {
+        "source": "<text>",
+        "start_offset": 0,
+        "end_offset": 64,
+        "line": 1,
+        "column": 1
+      },
+      "occurrences": [
+        {
+          "original_value": "b2c45c1a1e1c6c9309a5484a9a7a7ff1fb41b58dda02c25d9bab80882264fdb9",
+          "is_defanged": false,
+          "source_location": {
+            "source": "<text>",
+            "start_offset": 0,
+            "end_offset": 64,
+            "line": 1,
+            "column": 1
+          }
+        }
+      ]
+    }
+  ],
+  "enrichment": {
+    "requested": true,
+    "completeness": "complete",
+    "completed_at": "2026-09-26T00:00:00Z",
+    "provider_availability": {
+      "virustotal": "mocked"
+    },
+    "status_counts": {
+      "found": 1
+    },
+    "attempts": 1,
+    "attempt_limit": 30,
+    "deadline_seconds": 120.0,
+    "cancelled": false
+  },
+  "provider_results": [
+    {
+      "provider_id": "virustotal",
+      "ioc_index": 0,
+      "status": "found",
+      "reason": "Synthetic documentation response; no lookup performed.",
+      "attempted": false,
+      "attempts": 0,
+      "started_at": null,
+      "completed_at": null,
+      "fetched_at": "2026-09-26T00:00:00Z",
+      "http_status": null,
+      "retry_after": null,
+      "fragment_stripped": false,
+      "reused": false,
+      "evidence": {
+        "attributes": {
+          "report_id": "b2c45c1a1e1c6c9309a5484a9a7a7ff1fb41b58dda02c25d9bab80882264fdb9",
+          "last_analysis_stats": {
+            "malicious": 6,
+            "suspicious": 0,
+            "harmless": 0
+          }
+        },
+        "observed_at": "2026-09-26T00:00:00Z",
+        "observed_at_original": null,
+        "reference": null
+      }
+    }
+  ],
+  "assessments": [
+    {
+      "ioc_index": 0,
+      "ioc_id": "4d0d8c35de4e85998f1907913b76c32d0876912d73b3f34145fcfe0f320922b3",
+      "policy_version": "phase4-v1",
+      "scoring_as_of": "2026-09-26T00:00:00Z",
+      "risk_score": 65,
+      "evidence_confidence": 70,
+      "label": "suspicious",
+      "reason": "Provisional adverse reputation assessment; not proof of compromise.",
+      "contributions": [
+        {
+          "reference": {
+            "evidence_id": "5e74f56ddfca187e66c253fdf4b556b2c83aed4aab2624359530673d59e389ba",
+            "provider_id": "virustotal",
+            "outcome_index": 0,
+            "ioc_index": 0,
+            "lookup": {
+              "type": "sha256",
+              "normalized_value": "b2c45c1a1e1c6c9309a5484a9a7a7ff1fb41b58dda02c25d9bab80882264fdb9"
+            },
+            "report_reference": null,
+            "observed_at": "2026-09-26T00:00:00Z",
+            "observed_at_original": null,
+            "fetched_at": "2026-09-26T00:00:00Z",
+            "pointers": [
+              "/provider_results/0",
+              "/provider_results/0/attempted",
+              "/provider_results/0/attempts",
+              "/provider_results/0/completed_at",
+              "/provider_results/0/evidence",
+              "/provider_results/0/evidence/attributes",
+              "/provider_results/0/evidence/attributes/last_analysis_stats",
+              "/provider_results/0/evidence/attributes/last_analysis_stats/harmless",
+              "/provider_results/0/evidence/attributes/last_analysis_stats/malicious",
+              "/provider_results/0/evidence/attributes/last_analysis_stats/suspicious",
+              "/provider_results/0/evidence/attributes/report_id",
+              "/provider_results/0/evidence/observed_at",
+              "/provider_results/0/evidence/observed_at_original",
+              "/provider_results/0/evidence/reference",
+              "/provider_results/0/fetched_at",
+              "/provider_results/0/fragment_stripped",
+              "/provider_results/0/http_status",
+              "/provider_results/0/ioc_index",
+              "/provider_results/0/provider_id",
+              "/provider_results/0/reason",
+              "/provider_results/0/retry_after",
+              "/provider_results/0/reused",
+              "/provider_results/0/started_at",
+              "/provider_results/0/status",
+              "/results/0/normalized_value",
+              "/results/0/type"
+            ],
+            "field_values": {
+              "/provider_results/0": {
+                "provider_id": "virustotal",
+                "ioc_index": 0,
+                "status": "found",
+                "reason": "Synthetic documentation response; no lookup performed.",
+                "attempted": false,
+                "attempts": 0,
+                "started_at": null,
+                "completed_at": null,
+                "fetched_at": "2026-09-26T00:00:00Z",
+                "http_status": null,
+                "retry_after": null,
+                "fragment_stripped": false,
+                "reused": false,
+                "evidence": {
+                  "attributes": {
+                    "report_id": "b2c45c1a1e1c6c9309a5484a9a7a7ff1fb41b58dda02c25d9bab80882264fdb9",
+                    "last_analysis_stats": {
+                      "malicious": 6,
+                      "suspicious": 0,
+                      "harmless": 0
+                    }
+                  },
+                  "observed_at": "2026-09-26T00:00:00Z",
+                  "observed_at_original": null,
+                  "reference": null
+                }
+              },
+              "/provider_results/0/provider_id": "virustotal",
+              "/provider_results/0/ioc_index": 0,
+              "/provider_results/0/status": "found",
+              "/provider_results/0/reason": "Synthetic documentation response; no lookup performed.",
+              "/provider_results/0/attempted": false,
+              "/provider_results/0/attempts": 0,
+              "/provider_results/0/started_at": null,
+              "/provider_results/0/completed_at": null,
+              "/provider_results/0/fetched_at": "2026-09-26T00:00:00Z",
+              "/provider_results/0/http_status": null,
+              "/provider_results/0/retry_after": null,
+              "/provider_results/0/fragment_stripped": false,
+              "/provider_results/0/reused": false,
+              "/provider_results/0/evidence": {
+                "attributes": {
+                  "report_id": "b2c45c1a1e1c6c9309a5484a9a7a7ff1fb41b58dda02c25d9bab80882264fdb9",
+                  "last_analysis_stats": {
+                    "malicious": 6,
+                    "suspicious": 0,
+                    "harmless": 0
+                  }
+                },
+                "observed_at": "2026-09-26T00:00:00Z",
+                "observed_at_original": null,
+                "reference": null
+              },
+              "/provider_results/0/evidence/attributes": {
+                "report_id": "b2c45c1a1e1c6c9309a5484a9a7a7ff1fb41b58dda02c25d9bab80882264fdb9",
+                "last_analysis_stats": {
+                  "malicious": 6,
+                  "suspicious": 0,
+                  "harmless": 0
+                }
+              },
+              "/provider_results/0/evidence/attributes/report_id": "b2c45c1a1e1c6c9309a5484a9a7a7ff1fb41b58dda02c25d9bab80882264fdb9",
+              "/provider_results/0/evidence/attributes/last_analysis_stats": {
+                "malicious": 6,
+                "suspicious": 0,
+                "harmless": 0
+              },
+              "/provider_results/0/evidence/attributes/last_analysis_stats/malicious": 6,
+              "/provider_results/0/evidence/attributes/last_analysis_stats/suspicious": 0,
+              "/provider_results/0/evidence/attributes/last_analysis_stats/harmless": 0,
+              "/provider_results/0/evidence/observed_at": "2026-09-26T00:00:00Z",
+              "/provider_results/0/evidence/observed_at_original": null,
+              "/provider_results/0/evidence/reference": null,
+              "/results/0/type": "sha256",
+              "/results/0/normalized_value": "b2c45c1a1e1c6c9309a5484a9a7a7ff1fb41b58dda02c25d9bab80882264fdb9"
+            }
+          },
+          "rule_id": "vt.malicious_ge_5",
+          "base_score": 65,
+          "base_support": 70,
+          "age_seconds": 0.0,
+          "freshness_percent": 100,
+          "freshness_reason": "within_7_days",
+          "weighted_score": 65,
+          "weighted_support": 70,
+          "role": "maximum",
+          "no_adverse": false,
+          "reason": "Provider evidence rule.",
+          "flags": []
+        }
+      ],
+      "maximum_score": 65,
+      "maximum_support": 70,
+      "qualified_provider_count": 1,
+      "corroboration_evidence_ids": [
+        "5e74f56ddfca187e66c253fdf4b556b2c83aed4aab2624359530673d59e389ba"
+      ],
+      "risk_bonus": 0,
+      "confidence_bonus": 0,
+      "tension_penalty": 0,
+      "risk_before_cap": 65,
+      "confidence_before_cap": 70,
+      "risk_cap": 100,
+      "confidence_cap": 95,
+      "tensions": [],
+      "coverage": {
+        "found": 1
+      },
+      "limitations": [
+        "Provisional heuristics, not probabilities or proof of compromise.",
+        "Zero, not_found, harmless votes, and no adverse evidence never establish safety.",
+        "Distinct providers are only a proxy for independent upstream sources.",
+        "URLhaus timestamp provenance is ambiguous; freshness is capped at 75%.",
+        "Relationships are descriptive only and never transfer risk."
+      ]
+    }
+  ],
+  "relationships": {
+    "edges": [],
+    "groups": [
+      {
+        "kind": "same_input",
+        "group_id": "f3273bd145113ebadfc99933f8ce052e8189aa6107e795815a2216a5837b5b55",
+        "members": [
+          "4d0d8c35de4e85998f1907913b76c32d0876912d73b3f34145fcfe0f320922b3"
+        ],
+        "occurrences": [],
+        "lookup": null,
+        "reused_evidence_ids": [],
+        "risk_contribution": 0,
+        "confidence_contribution": 0
+      }
+    ],
+    "explanation": "Descriptive only: no causation, resolution, or transfer of risk."
+  },
+  "scoring_diagnostics": [],
+  "ai_reporting": {
+    "requested": true,
+    "status": "completed",
+    "invalid_output_reason": null,
+    "validation_counts": {
+      "returned_claim_count": 7,
+      "unknown_alias_count": 0,
+      "duplicate_count": 0
+    },
+    "origin": "ai_assisted",
+    "provider": "groq",
+    "model": "qwen/qwen3.8-27b",
+    "prompt_version": "report-v3",
+    "catalogue_version": "catalogue-v1",
+    "projection_version": "ai-input-v3",
+    "started_at": "2026-09-26T00:00:00Z",
+    "completed_at": "2026-09-26T00:00:00Z",
+    "attempts": 1,
+    "usage": {
+      "prompt_tokens": 500,
+      "completion_tokens": 100,
+      "total_tokens": 600
+    },
+    "projected_ioc_ids": [
+      "4d0d8c35de4e85998f1907913b76c32d0876912d73b3f34145fcfe0f320922b3"
+    ],
+    "omitted_iocs": {},
+    "token_estimates": {},
+    "sections": {
+      "executive_summary": [
+        {
+          "claim_id": "252367c479f79e0d890024a2139b5749158ef8c74bbaa791f51485d1a0fabceb",
+          "kind": "fact",
+          "text": "Recorded risk 65/100, label suspicious, evidence confidence 70/100. Zero/unknown never establishes safety.",
+          "ioc_ids": [
+            "4d0d8c35de4e85998f1907913b76c32d0876912d73b3f34145fcfe0f320922b3"
+          ],
+          "evidence_ids": [
+            "5e74f56ddfca187e66c253fdf4b556b2c83aed4aab2624359530673d59e389ba"
+          ],
+          "relation_refs": [],
+          "template_key": "assessment_snapshot",
+          "action_priority": null,
+          "local_pointers": [
+            "/assessments/0"
+          ],
+          "origin": "ai_assisted"
+        },
+        {
+          "claim_id": "b5ee300df93d94d8a612ece5042421d1d18745fa1561f2656d2850ba137f82c6",
+          "kind": "fact",
+          "text": "virustotal evidence contributes 65 freshness-adjusted points (base 65); provider reputation does not prove compromise.",
+          "ioc_ids": [
+            "4d0d8c35de4e85998f1907913b76c32d0876912d73b3f34145fcfe0f320922b3"
+          ],
+          "evidence_ids": [
+            "5e74f56ddfca187e66c253fdf4b556b2c83aed4aab2624359530673d59e389ba"
+          ],
+          "relation_refs": [],
+          "template_key": "provider_adverse",
+          "action_priority": null,
+          "local_pointers": [
+            "/provider_results/0",
+            "/provider_results/0/attempted",
+            "/provider_results/0/attempts",
+            "/provider_results/0/completed_at",
+            "/provider_results/0/evidence",
+            "/provider_results/0/evidence/attributes",
+            "/provider_results/0/evidence/attributes/last_analysis_stats",
+            "/provider_results/0/evidence/attributes/last_analysis_stats/harmless",
+            "/provider_results/0/evidence/attributes/last_analysis_stats/malicious",
+            "/provider_results/0/evidence/attributes/last_analysis_stats/suspicious",
+            "/provider_results/0/evidence/attributes/report_id",
+            "/provider_results/0/evidence/observed_at",
+            "/provider_results/0/evidence/observed_at_original",
+            "/provider_results/0/evidence/reference",
+            "/provider_results/0/fetched_at",
+            "/provider_results/0/fragment_stripped",
+            "/provider_results/0/http_status",
+            "/provider_results/0/ioc_index",
+            "/provider_results/0/provider_id",
+            "/provider_results/0/reason",
+            "/provider_results/0/retry_after",
+            "/provider_results/0/reused",
+            "/provider_results/0/started_at",
+            "/provider_results/0/status",
+            "/results/0/normalized_value",
+            "/results/0/type"
+          ],
+          "origin": "ai_assisted"
+        }
+      ],
+      "ioc_findings": [
+        {
+          "claim_id": "d05dcbb84af0dbac6cd3d720eec6554a3b636eef6f0516da168e3672f959d734",
+          "kind": "fact",
+          "text": "Recorded risk 65/100, label suspicious, evidence confidence 70/100. Zero/unknown never establishes safety.",
+          "ioc_ids": [
+            "4d0d8c35de4e85998f1907913b76c32d0876912d73b3f34145fcfe0f320922b3"
+          ],
+          "evidence_ids": [
+            "5e74f56ddfca187e66c253fdf4b556b2c83aed4aab2624359530673d59e389ba"
+          ],
+          "relation_refs": [],
+          "template_key": "assessment_snapshot",
+          "action_priority": null,
+          "local_pointers": [
+            "/assessments/0"
+          ],
+          "origin": "ai_assisted"
+        },
+        {
+          "claim_id": "8199880f995b20cef2c3f68e30edfb5419b7ba8212e332785436cf321701fbcf",
+          "kind": "fact",
+          "text": "virustotal evidence contributes 65 freshness-adjusted points (base 65); provider reputation does not prove compromise.",
+          "ioc_ids": [
+            "4d0d8c35de4e85998f1907913b76c32d0876912d73b3f34145fcfe0f320922b3"
+          ],
+          "evidence_ids": [
+            "5e74f56ddfca187e66c253fdf4b556b2c83aed4aab2624359530673d59e389ba"
+          ],
+          "relation_refs": [],
+          "template_key": "provider_adverse",
+          "action_priority": null,
+          "local_pointers": [
+            "/provider_results/0",
+            "/provider_results/0/attempted",
+            "/provider_results/0/attempts",
+            "/provider_results/0/completed_at",
+            "/provider_results/0/evidence",
+            "/provider_results/0/evidence/attributes",
+            "/provider_results/0/evidence/attributes/last_analysis_stats",
+            "/provider_results/0/evidence/attributes/last_analysis_stats/harmless",
+            "/provider_results/0/evidence/attributes/last_analysis_stats/malicious",
+            "/provider_results/0/evidence/attributes/last_analysis_stats/suspicious",
+            "/provider_results/0/evidence/attributes/report_id",
+            "/provider_results/0/evidence/observed_at",
+            "/provider_results/0/evidence/observed_at_original",
+            "/provider_results/0/evidence/reference",
+            "/provider_results/0/fetched_at",
+            "/provider_results/0/fragment_stripped",
+            "/provider_results/0/http_status",
+            "/provider_results/0/ioc_index",
+            "/provider_results/0/provider_id",
+            "/provider_results/0/reason",
+            "/provider_results/0/retry_after",
+            "/provider_results/0/reused",
+            "/provider_results/0/started_at",
+            "/provider_results/0/status",
+            "/results/0/normalized_value",
+            "/results/0/type"
+          ],
+          "origin": "ai_assisted"
+        }
+      ],
+      "correlations": [],
+      "uncertainties": [
+        {
+          "claim_id": "4c1ee7a38dc346bd362e513f7aa3dc6af592aa8925c673c63cccce88d5de4dbe",
+          "kind": "uncertainty",
+          "text": "Reputation evidence does not prove compromise in this environment.",
+          "ioc_ids": [
+            "4d0d8c35de4e85998f1907913b76c32d0876912d73b3f34145fcfe0f320922b3"
+          ],
+          "evidence_ids": [
+            "5e74f56ddfca187e66c253fdf4b556b2c83aed4aab2624359530673d59e389ba"
+          ],
+          "relation_refs": [],
+          "template_key": "reputation_limit",
+          "action_priority": null,
+          "local_pointers": [
+            "/assessments/0"
+          ],
+          "origin": "ai_assisted"
+        }
+      ],
+      "prioritized_investigation_steps": [
+        {
+          "claim_id": "2330fbdbcd3ffb803e466947ed1992b6ee1c611e40fcf07aa30999150db93ca7",
+          "kind": "recommended_step",
+          "text": "Manually review existing internal telemetry if available. Document context locally. No action was performed; do not close an investigation solely on a zero score.",
+          "ioc_ids": [
+            "4d0d8c35de4e85998f1907913b76c32d0876912d73b3f34145fcfe0f320922b3"
+          ],
+          "evidence_ids": [
+            "5e74f56ddfca187e66c253fdf4b556b2c83aed4aab2624359530673d59e389ba"
+          ],
+          "relation_refs": [],
+          "template_key": "review_existing_telemetry",
+          "action_priority": "medium",
+          "local_pointers": [
+            "/assessments/0"
+          ],
+          "origin": "ai_assisted"
+        }
+      ],
+      "analyst_notes": [
+        {
+          "claim_id": "3ebc15c966376f2c6717eb661be9255ea46a616141c9cabea9b8a69edb93a2c7",
+          "kind": "interpretation",
+          "text": "Scores and confidence are provisional heuristics, not probabilities. Use the preserved deterministic evidence before drawing incident conclusions.",
+          "ioc_ids": [
+            "4d0d8c35de4e85998f1907913b76c32d0876912d73b3f34145fcfe0f320922b3"
+          ],
+          "evidence_ids": [
+            "5e74f56ddfca187e66c253fdf4b556b2c83aed4aab2624359530673d59e389ba"
+          ],
+          "relation_refs": [],
+          "template_key": "analyst_caution",
+          "action_priority": null,
+          "local_pointers": [
+            "/assessments/0"
+          ],
+          "origin": "ai_assisted"
+        }
+      ]
+    }
+  }
+}
